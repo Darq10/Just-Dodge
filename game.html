@@ -22,21 +22,26 @@
 
         .rocket
         {
+            margin: 0;
             height: 256px;
             width: 256px;
-            margin-top: 300px;
-            margin-left: 0px;
-            margin-right: 0px;
+            position: absolute;
+            top: 50%;
+            transform: translate(128px,-50%);
+            -ms-transform: translate(128px,-50%);
             image-rendering: pixelated;
             font-family: Poppins;
         }
 
         .fire
         {
-            margin: 0px;
+            margin: 0;
             height: 256px;
             width: 256px;
-            margin: 0px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
             image-rendering: pixelated;
             font-family: Poppins;
         }
@@ -45,10 +50,13 @@
 </head>
 <body>
 
-    <div alt="Fire" class="fire">
-        <img src="/images/fire.gif" alt="Fire" class="fire">
+    <div alt="Fire" class="Fire">
+        <img src="/images/fire.gif" class="fire">
     </div>
-    <img src="/images/rocket.png" alt="Rocket" class="rocket">
+
+    <div alt="Rocket" class="rocket">
+    <img src="/images/rocket.png" class="rocket">
+    </div>
 
 </body>
 </html>
