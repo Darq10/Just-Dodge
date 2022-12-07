@@ -1,0 +1,169 @@
+@font-face 
+{
+    font-family: Poppins;
+    src: url(/fonts/Poppins-ExtraLight.ttf);
+}
+
+body
+{
+    background-color: #15052f;
+}
+
+.background
+{
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    background-color: #15052f;
+    align-items: center;
+}
+
+.playBackground
+{
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    background-color: #4c1791;
+    align-items: center;
+}
+
+.title
+{
+    font-family: Poppins;
+    font-size: 100px;
+    margin-top: 320px;
+    color: #ffcfde;
+    text-align: center;
+}
+
+.play
+{
+    font-family: Poppins;
+    font-size: 50px;
+    color: #ffcfde;
+    max-width: 260px;
+    background-color: #4c1791;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    width: 250px;
+    transition: font-size 250ms ease-in 10ms, margin-top 300ms ease-in-out 10ms, width 200ms linear 10ms;
+}
+
+.play:active
+{
+    font-family: Poppins;
+    font-size: 10px;
+    color: #ffcfde;
+    max-width: 1000px;
+    background-color: #4c1791;
+    text-align: center;
+    margin: 0px;
+    margin-top: 1000px;
+    width: 1000px;
+    transition: font-size 150ms ease-in 5ms, margin-top 300ms ease-in-out 10ms, width 300ms ease-in-out 1ms;
+}
+
+.play:hover
+{
+    font-family: Poppins;
+    font-size: 60px;
+    color: #ffcfde;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 90px;
+    width: 300px;
+    transition: width 300ms ease-in-out 10ms, font-size 150ms ease-in 5ms, margin-top 300ms ease-in-out 10ms;
+}
+
+a{
+  display:inline-block;
+  width:100%;
+  height:100%;
+}
+
+.star1
+{
+    background-color: #4c1791;
+    align-self: flex-end;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    width: 10px;
+    height: 10px;
+    animation-name: star1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes star1 {
+    0% {transform: translateX(100px);}
+    33% {transform: translateX(1000px);}
+    66% {transform: translateX(750px);}
+    100% {transform: translateX(100px);}
+    
+}
+
+.star2
+{
+    background-color: #4c1791;
+    align-self: flex-end;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    width: 10px;
+    height: 10px;
+    animation-name: star2;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes star2 {
+    0% {transform: translate(1000px,200px);}
+    33% {transform: translate(1700px,200px);}
+    66% {transform: translate(420px,200px);}
+    100% {transform: translate(1000px,200px);}
+    
+}
+
+.star3
+{
+    background-color: #4c1791;
+    align-self: flex-end;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    width: 10px;
+    height: 10px;
+    animation-name: star3;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes star3 {
+    0% {transform: translate(1700px,550px);}
+    33% {transform: translate(0px,550px);}
+    66% {transform: translate(1400px,550px);}
+    100% {transform: translate(1700px,550px);}
+    
+}
+
+.star4
+{
+    background-color: #4c1791;
+    align-self: flex-end;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    width: 10px;
+    height: 10px;
+    animation-name: star4;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes star4 {
+    0% {transform: translate(1100px,800px);}
+    33% {transform: translate(200px,800px);}
+    66% {transform: translate(1600px,800px);}
+    100% {transform: translate(1100px,800px);}
+    
+}

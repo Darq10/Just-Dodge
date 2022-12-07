@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Dodge!</title>
+    <link rel="icon" href="/images/favicon.ico">
+
+    <style>
+        @font-face 
+        {
+            font-family: Poppins;
+            src: url(/fonts/Poppins-ExtraLight.ttf);
+        }
+
+        body
+        {
+            background-color: #15052f;
+            margin:0;
+        }
+
+        .rocket
+        {
+            height: 256px;
+            width: 256px;
+            margin-top: 300px;
+            margin-left: 0px;
+            margin-right: 0px;
+            image-rendering: pixelated;
+            font-family: Poppins;
+        }
+
+        .fire
+        {
+            background-position-y: 500px;
+            background-position: 0 0;
+            background-image: url("./images/fire.gif");
+            background-repeat: no-repeat;
+            image-resolution: 200%;
+            height: 256px;
+            width: 256px;
+            image-rendering: pixelated;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div alt="Fire" class="fire"></div>
+    <img src="/images/rocket.png" alt="Rocket" class="rocket">
+
+</body>
+</html>
