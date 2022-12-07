@@ -50,6 +50,7 @@ body
     margin-top: 100px;
     width: 250px;
     transition: font-size 250ms ease-in 10ms, margin-top 300ms ease-in-out 10ms, width 200ms linear 10ms;
+    text-decoration: none;
 }
 
 .play:active
@@ -64,6 +65,7 @@ body
     margin-top: 1000px;
     width: 1000px;
     transition: font-size 150ms ease-in 5ms, margin-top 300ms ease-in-out 10ms, width 300ms ease-in-out 1ms;
+    text-decoration: none;
 }
 
 .play:hover
@@ -76,6 +78,12 @@ body
     margin-top: 90px;
     width: 300px;
     transition: width 300ms ease-in-out 10ms, font-size 150ms ease-in 5ms, margin-top 300ms ease-in-out 10ms;
+    text-decoration: none;
+}
+
+.nodecor
+{
+    text-decoration: none;
 }
 
 a{
