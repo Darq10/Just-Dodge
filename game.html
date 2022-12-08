@@ -18,6 +18,7 @@
         {
             background-color: #15052f;
             margin:0;
+            overflow: hidden;
         }
 
         .rocket
@@ -46,6 +47,40 @@
             font-family: Poppins;
         }
 
+        .asteroid
+        {
+            margin: 0;
+            height: 256px;
+            width: 256px;
+            position: absolute;
+            top: 50%;
+            left:100%;
+            transform: translate(-100%,-50%);
+            -ms-transform: translate(-100%,-50%);
+            image-rendering: pixelated;
+            font-family: Poppins;
+            animation: asteroid 2s infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes asteroid 
+        {
+            0% 
+            {
+                top: 50%;
+                left: 150%;
+                transform: translate(-150%,-50%);
+                -ms-transform: translate(-100%,-50%);
+            }
+            100% 
+            {
+                top: 50%;
+                left: -50%;
+                transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -55,8 +90,16 @@
     </div>
 
     <div alt="Rocket" class="rocket">
-    <img src="/images/rocket.png" class="rocket">
+        <img src="/images/rocket.png" class="rocket">
     </div>
+
+    <div id="points">-</div>
+
+    <div id="asteroid">
+        <img src="/images/asteroid.png" class="asteroid">
+    </div>
+
+    <script src="./script.js"></script>
 
 </body>
 </html>
