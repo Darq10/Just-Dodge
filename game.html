@@ -27,7 +27,6 @@
             height: 256px;
             width: 256px;
             position: absolute;
-            top: 50%;
             transform: translate(138px,-50%);
             -ms-transform: translate(138px,-50%);
             image-rendering: pixelated;
@@ -40,7 +39,6 @@
             height: 256px;
             width: 256px;
             position: absolute;
-            top: 50%;
             transform: translate(20px,-50%);
             -ms-transform: translate(20px,-50%);
             image-rendering: pixelated;
@@ -61,20 +59,32 @@
             font-family: Poppins;
             animation: asteroid 2s infinite;
             animation-timing-function: linear;
+            align-self: center;
+        }
+
+        .h1
+        {
+            top: 15%;
+        }
+        .h2
+        {   
+            top: 50%;
+        }
+        .h3
+        {
+            top: 85%;
         }
 
         @keyframes asteroid 
         {
             0% 
             {
-                top: 50%;
                 left: 150%;
                 transform: translate(-150%,-50%);
                 -ms-transform: translate(-100%,-50%);
             }
             100% 
             {
-                top: 50%;
                 left: -50%;
                 transform: translate(-50%,-50%);
                 -ms-transform: translate(-50%,-50%);
@@ -85,18 +95,18 @@
 </head>
 <body>
 
-    <div alt="Fire" class="Fire">
-        <img src="/images/fire.gif" class="fire">
+    <div alt="Fire" class="fire h2" id="firePart">
+        <img src="/images/fire.gif" class="fire h2">
     </div>
 
-    <div alt="Rocket" class="rocket">
-        <img src="/images/rocket.png" class="rocket">
+    <div alt="Rocket" class="rocket h2" id="rocketPart">
+        <img src="/images/rocket.png" class="rocket h2">
     </div>
 
     <div id="points">-</div>
 
     <div id="asteroid">
-        <img src="/images/asteroid.png" class="asteroid">
+        <img src="/images/asteroid.png" class="asteroid h2">
     </div>
 
     <script src="./script.js"></script>
