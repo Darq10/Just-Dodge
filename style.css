@@ -41,9 +41,13 @@ body
     background-color: #4c1791;
     text-align: center;
     margin: 0;
-    width: fit-content;
     transition: font-size 250ms ease-in 10ms, width 200ms linear 10ms;
     text-decoration: none;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(50%,50%);
+    -ms-transform: translate(50%,50%);
 }
 
 .play:active
